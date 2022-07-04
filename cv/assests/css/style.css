@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/lato/Lato-Regular.ttf");
+}
+
+.hr__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 3px;
+    background: linear-gradient(to right, #5d00ff, #ff40ff, #ff6843, #ffbb00);
+    width: 90%;
+    margin-block-end: 2px;
+    margin-block-start: 2px;
+    opacity: 0.9;
+    background-size: 200%;
+    animation: hrFLow 10s infinite ease;
+}
+
+@keyframes hrFLow {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    0% {
+        background-position: left;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #e4e4ea;
+    font-family: 'Lato';
+    letter-spacing: 1px;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    max-width: 1536px;
+}
+
+header {
+
+}
+
+main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background: #ffffff;
+    width: 190mm;
+    height: 859px;
+    box-shadow: 0px 0px 25px 3px rgba(50, 50, 50, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#about {
+    width: 211px;
+    height: 859px;
+    background: #1d252d;
+    box-shadow: 0px 0px 20px 2px rgba(20, 20, 20, 0.5);
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: url("../img/section-about-bg.png");
+    background-size: cover;
+}
+
+.about-photo__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #5d00ff, #ff40ff, #ff6843, #ffbb00);
+    border-radius: 50%;
+}
+
+.photo {
+    width: 94%;
+    height: 94%;
+    border-radius: 50%;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.contacts-heading__container {
+    display: flex;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.contacts-heading {
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+    list-style: none;
+    padding-top: 5px;
+}
+
+.contacts-list__li {
+    padding-top: 5px;
+}
+
+.contact-icon {
+    font-size: 15px;
+}
+
+.contacts-icon__parag {
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.contacts-icon__parag.second {
+    padding-left: 7px;
+}
+
+footer {
+
+}
